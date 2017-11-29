@@ -7,16 +7,11 @@ public class Storage {
     LinkedHashMap<String,Manager> manager = new LinkedHashMap();
     LinkedHashMap<String,Movie> movie = new LinkedHashMap();
     LinkedHashMap<String,Integer> tickets = new LinkedHashMap();
-    Cinema [] cinemas = new Cinema[10];
+    LinkedHashMap<String,Cinema> cinemas = new LinkedHashMap<>();
 
-    public Cinema[] getCinemas() {
-        return cinemas;
+    public void addCinema(Cinema cinema){
+        this.cinemas.put("Name",cinema);
     }
-
-    public void setCinemas(Cinema[] cinemas) {
-        this.cinemas = cinemas;
-    }
-
     public void addUser(User user){
         this.users.put("Name",user);
     }

@@ -10,7 +10,9 @@ public class Manager extends User{
         this.storage=storage;
     }
     public void addMovie(Movie movie){
-        storage.movie.put(movie.name)
-
+        storage.addMovie(movie);
+    }
+    public void addCinema(Cinema cinema) {
+        storage.addCinema(cinema);
     }
 }
