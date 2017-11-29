@@ -9,8 +9,12 @@ public class Booking {
         this.cinema=cinema;
     }
 
-    boolean booking(Integer ryad, String place){
-        if (cinema.seat);
+    boolean booking(Integer ryad, Integer place){
+        if (cinema.getSeat(ryad,place)!="Busy"){
+            cinema.setSeat(ryad,place);
+            return true;
+        }
+        return false;
 
     }
 
