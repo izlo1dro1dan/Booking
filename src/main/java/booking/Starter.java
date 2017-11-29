@@ -7,6 +7,8 @@ public class Starter {
         storage.cinemas[0]= new Cinema("Arman");
 
         Booking booking = new Booking(storage.cinemas[0]);
-        booking.booking(7,"A");
+        booking.booking(7,8);
+
+
     }
 }

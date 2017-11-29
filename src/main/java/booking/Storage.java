@@ -3,9 +3,9 @@ package main.java.booking;
 import java.util.LinkedHashMap;
 
 public class Storage {
-    LinkedHashMap<String, String> users = new LinkedHashMap();
-    LinkedHashMap<String,String> manager = new LinkedHashMap();
-    LinkedHashMap<String,String> movie = new LinkedHashMap();
+    LinkedHashMap<String, User> users = new LinkedHashMap();
+    LinkedHashMap<String,Manager> manager = new LinkedHashMap();
+    LinkedHashMap<String,Movie> movie = new LinkedHashMap();
     LinkedHashMap<String,Integer> tickets = new LinkedHashMap();
     Cinema [] cinemas = new Cinema[10];
 
@@ -17,14 +17,14 @@ public class Storage {
         this.cinemas = cinemas;
     }
 
-    public void addUser(String login){
-        this.users.put("Name","login");
+    public void addUser(User user){
+        this.users.put("Name",user);
     }
-    public void addManager(String login){
-        this.manager.put("Name","login");
+    public void addManager(Manager manager){
+        this.manager.put("Name",manager);
     }
-    public void addMovie(String name){
-        this.movie.put("Name","name");
+    public void addMovie(Movie movie){
+        this.movie.put("Name",movie);
     }
     public boolean checkUser(String login){
         return this.users.containsValue("login");

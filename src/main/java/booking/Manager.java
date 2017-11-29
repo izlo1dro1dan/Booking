@@ -5,4 +5,12 @@ public class Manager extends User{
     public void out() {
         System.out.println("Manager use");
     }
+    Storage storage;
+    Manager(Storage storage){
+        this.storage=storage;
+    }
+    public void addMovie(Movie movie){
+        storage.movie.put(movie.name)
+
+    }
 }
