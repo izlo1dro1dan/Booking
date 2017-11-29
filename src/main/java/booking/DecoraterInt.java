@@ -1,5 +1,5 @@
 package main.java.booking;
 
-public interface Decoder {
+public interface DecoraterInt {
     public void out();
 }
