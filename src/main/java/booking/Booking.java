@@ -1,18 +1,20 @@
 package main.java.booking;
 
-public class Booking  extends DescriptionDecorator{
+public class Booking {
 
     int orderId;
+    Storage storage
 
-    public Booking(DecoraterInt decoratedName) {
-        super(decoratedName);
+    public Booking(Storage storage) {
+        this.storage=storage;
     }
 
     @Override
     public void out() {
         System.out.println("Booking run");
     }
-    boolean booking(String ){
+    boolean booking(Integer ryad, String place){
+        storage.cinemas.
 
     }
 
