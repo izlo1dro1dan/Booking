@@ -1,12 +1,12 @@
 package main.java.booking;
 
 import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class Storage {
-    LinkedHashMap users = new LinkedHashMap();
-    LinkedHashMap manager = new LinkedHashMap();
-    LinkedHashMap movie = new LinkedHashMap();
+    LinkedHashMap<String, String> users = new LinkedHashMap();
+    LinkedHashMap<String,String> manager = new LinkedHashMap();
+    LinkedHashMap<String,String> movie = new LinkedHashMap();
+    LinkedHashMap<String,Integer> tickets = new LinkedHashMap();
 
 
     public void addUser(String login){
@@ -26,5 +26,11 @@ public class Storage {
     }
     public boolean checkMovie(String name){
         return this.movie.containsValue("login");
+    }
+    public void addTicket(int id){
+        this.tickets.put("ID",id);
+    }
+    public boolean checkTicket(int id){
+        return this.tickets.containsValue(id);
     }
 }
