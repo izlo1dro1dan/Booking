@@ -1,10 +1,7 @@
 package main.java.booking;
 
 public class Manager extends User{
-    @Override
-    public void out() {
-        System.out.println("Manager use");
-    }
+
     Storage storage;
     Manager(Storage storage){
         this.storage=storage;
