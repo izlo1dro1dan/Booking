@@ -24,12 +24,12 @@ public class Cinema {
     String name;
     String type;
 
-    public String[][] getSeat() {
-        return seat;
+    public String getSeat(Integer ryad, Integer place) {
+        return seat[ryad][place];
     }
 
-    public void setSeat(String[][] seat) {
-        this.seat = seat;
+    public void setSeat(Integer ryad, Integer place) {
+        this.seat[ryad][place]="Busy";
     }
 
     String [][] seat = new String[10][10];

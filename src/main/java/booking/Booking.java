@@ -10,7 +10,7 @@ public class Booking {
     }
 
     boolean booking(Integer ryad, String place){
-        cinema.setSeat(10);
+        if (cinema.seat);
 
     }
 
