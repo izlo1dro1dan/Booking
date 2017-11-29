@@ -1,6 +1,10 @@
 package main.java.booking;
 
 public class Cinema {
+
+    Cinema(String name){
+        this.name=name;
+    }
     public String getName() {
         return name;
     }

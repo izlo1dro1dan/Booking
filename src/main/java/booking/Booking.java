@@ -3,18 +3,14 @@ package main.java.booking;
 public class Booking {
 
     int orderId;
-    Storage storage
+    Cinema cinema;
 
-    public Booking(Storage storage) {
-        this.storage=storage;
+    public Booking(Cinema cinema) {
+        this.cinema=cinema;
     }
 
-    @Override
-    public void out() {
-        System.out.println("Booking run");
-    }
     boolean booking(Integer ryad, String place){
-        storage.cinemas.
+        cinema.setSeat(10);
 
     }
 
